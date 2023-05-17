@@ -9,13 +9,15 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "main": "./build/floor-plan-editor.umd.js",
   "module": "./build/floor-plan-editor.es.js",
   "exports": {
-    "./lib/style.css":"./lib/style.css",
-    ".":{
-      "import" : "./lib/floor-plan-editor.es.js",
+    "./lib/style.css": "./lib/style.css",
+    ".": {
+      "import": "./lib/floor-plan-editor.es.js",
       "require": "./lib/floor-plan-editor.umd.js"
     }
   },
@@ -24,6 +26,7 @@
     "url": "https://github.com/Liers/floor-plan-editor"
   },
   "dependencies": {
+    "jquery": "^3.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
